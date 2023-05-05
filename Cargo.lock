@@ -619,6 +619,7 @@ name = "millenium-falcon-actix-rs"
 version = "0.1.0"
 dependencies = [
  "actix-web",
+ "serde",
 ]
 
 [[package]]
