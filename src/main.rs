@@ -1,5 +1,12 @@
 use actix_web::{web, App, HttpResponse, HttpServer};
 
+struct MilleniumFalcon {
+    autonomy: i16,
+    departure: String,
+    arrival: String,
+    routes_db: String,
+}
+
 // this function could be located in a different module
 fn scoped_config(cfg: &mut web::ServiceConfig) {
     cfg.service(
